@@ -98,78 +98,45 @@ const ServiceRequestSchema = {
 
 export const Arrivals = {
   requestName: "GetArrivalBoardRequest",
-  requestType: "GetBoardRequestParams",
   requestSchema: BoardRequestSchema,
-  responseName: "GetArrivalBoardResponse",
-  responseType: "StationBoardResponseType",
 };
 export const ArrivalsDepartures = {
   requestName: "GetArrivalDepartureBoardRequest",
-  requestType: "GetBoardRequestParams",
   requestSchema: BoardRequestSchema,
-  responseName: "GetArrivalDepartureBoardResponse",
-  responseType: "StationBoardResponseType",
 };
 export const ArrivalsDeparturesDetails = {
   requestName: "GetArrDepBoardWithDetailsRequest",
-  requestType: "GetBoardRequestParams",
   requestSchema: BoardRequestSchema,
-  responseName: "GetArrDepBoardWithDetailsResponse",
-  responseType: "StationBoardWithDetailsResponseType",
 };
 export const ArrivalsDetails = {
   requestName: "GetArrBoardWithDetailsRequest",
-  requestType: "GetBoardRequestParams",
   requestSchema: BoardRequestSchema,
-  responseName: "GetArrBoardWithDetailsResponse",
-  responseType: "StationBoardWithDetailsResponseType",
 };
 export const Departures = {
   requestName: "GetDepartureBoardRequest",
-  requestType: "GetBoardRequestParams",
   requestSchema: BoardRequestSchema,
-  responseName: "GetDepartureBoardResponse",
-  responseType: "StationBoardResponseType",
 };
 export const DeparturesDetails = {
   requestName: "GetDepBoardWithDetailsRequest",
-  requestType: "GetBoardRequestParams",
   requestSchema: BoardRequestSchema,
-  responseName: "GetDepBoardWithDetailsResponse",
-  responseType: "StationBoardWithDetailsResponseType",
 };
 export const FastestDepartures = {
   requestName: "GetFastestDeparturesRequest",
-  requestType: "GetDeparturesRequestParams",
   requestSchema: DeparturesRequestSchema,
-  responseName: "GetFastestDeparturesResponse",
-  responseType: "DeparturesBoardResponseType",
 };
 export const FastestDeparturesDetails = {
   requestName: "GetFastestDeparturesWithDetailsRequest",
-  requestType: "GetDeparturesRequestParams",
   requestSchema: DeparturesRequestSchema,
-  responseName: "GetFastestDeparturesWithDetailsResponse",
-  responseType: "DeparturesBoardWithDetailsResponseType",
 };
 export const NextDepartures = {
   requestName: "GetNextDeparturesRequest",
-  requestType: "GetDeparturesRequestParams",
   requestSchema: DeparturesRequestSchema,
-  responseName: "GetNextDeparturesResponse",
-  responseType: "DeparturesBoardResponseType",
 };
 export const NextDeparturesDetails = {
   requestName: "GetNextDeparturesWithDetailsRequest",
-  requestType: "GetDeparturesRequestParams",
   requestSchema: DeparturesRequestSchema,
-  responseName: "GetNextDeparturesWithDetailsResponse",
-  responseType: "DeparturesBoardWithDetailsResponseType",
 };
 export const Service = {
   requestName: "GetServiceDetailsRequest",
-  requestType: "GetServiceDetailsRequestParams",
   requestSchema: ServiceRequestSchema,
-  responseName: "GetServiceDetailsResponse",
-  responseType: "ServiceDetailsResponseType",
 };
