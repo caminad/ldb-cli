@@ -1,4 +1,5 @@
 const Ajv = require("ajv");
+const { decodeXML, decodeHTML } = require("entities");
 const { resolve } = require("url");
 const operations = require("./operations.js");
 const { SoapFault, SoapRequest } = require("./soap.js");
@@ -91,6 +92,10 @@ function walk(holder, key) {
     value = true;
   } else if (value === "false") {
     value = false;
+  } else if (typeof value === "string") {
+    // Some entities in message text are double encoded.
+    // This assumes that "&amp;amp;" is always a data entry mistake and not intended.
+    value = decodeHTML(decodeXML(value));
   }
 
   if (key === "soap:Fault") {
