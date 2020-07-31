@@ -128,7 +128,7 @@ ${bold("SEE ALSO")}
 function formatError(error) {
   const { name, message, stack } = Object(error);
   return `${red(`${bold(`${name}:`)} ${message}`)}${dim(
-    italic(stack?.replace(/^.*/, "") || ""),
+    italic((stack && stack.replace(/^.*/, "")) || ""),
   )}
 ${bold("Hint:")} Try ${command`--help`}.`;
 }

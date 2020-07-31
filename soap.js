@@ -53,7 +53,7 @@ class SoapFault extends Error {
    * @param {unknown} fault.Reason
    */
   constructor(fault) {
-    super(Object(fault.Reason)["#"] ?? fault.Reason);
+    super(Object(fault.Reason)["#"] || fault.Reason);
     this.code = fault.Code;
   }
 }
