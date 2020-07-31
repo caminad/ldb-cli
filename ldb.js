@@ -1,9 +1,9 @@
-import Ajv from "ajv";
-import { resolve } from "url";
-import * as operations from "./operations.js";
-import { SoapFault, SoapRequest } from "./soap.js";
+const Ajv = require("ajv");
+const { resolve } = require("url");
+const operations = require("./operations.js");
+const { SoapFault, SoapRequest } = require("./soap.js");
 
-export default class Client {
+class Client {
   static origin = "https://realtime.nationalrail.co.uk";
 
   /**
@@ -115,3 +115,5 @@ function walk(holder, key) {
     return value;
   }
 }
+
+module.exports = { Client };

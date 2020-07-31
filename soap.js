@@ -1,7 +1,7 @@
-import fetch from "node-fetch";
-import xmlbuilder2 from "xmlbuilder2";
+const fetch = require("node-fetch").default;
+const xmlbuilder2 = require("xmlbuilder2");
 
-export class SoapRequest {
+class SoapRequest {
   /**
    * @param {string} url
    * @param {object} init
@@ -44,7 +44,7 @@ class SoapResponse {
   }
 }
 
-export class SoapFault extends Error {
+class SoapFault extends Error {
   name = "SoapFault";
 
   /**
@@ -57,3 +57,5 @@ export class SoapFault extends Error {
     this.code = fault.Code;
   }
 }
+
+module.exports = { SoapRequest, SoapFault };

@@ -96,47 +96,49 @@ const ServiceRequestSchema = {
   },
 };
 
-export const Arrivals = {
-  requestName: "GetArrivalBoardRequest",
-  requestSchema: BoardRequestSchema,
-};
-export const ArrivalsDepartures = {
-  requestName: "GetArrivalDepartureBoardRequest",
-  requestSchema: BoardRequestSchema,
-};
-export const ArrivalsDeparturesDetails = {
-  requestName: "GetArrDepBoardWithDetailsRequest",
-  requestSchema: BoardRequestSchema,
-};
-export const ArrivalsDetails = {
-  requestName: "GetArrBoardWithDetailsRequest",
-  requestSchema: BoardRequestSchema,
-};
-export const Departures = {
-  requestName: "GetDepartureBoardRequest",
-  requestSchema: BoardRequestSchema,
-};
-export const DeparturesDetails = {
-  requestName: "GetDepBoardWithDetailsRequest",
-  requestSchema: BoardRequestSchema,
-};
-export const FastestDepartures = {
-  requestName: "GetFastestDeparturesRequest",
-  requestSchema: DeparturesRequestSchema,
-};
-export const FastestDeparturesDetails = {
-  requestName: "GetFastestDeparturesWithDetailsRequest",
-  requestSchema: DeparturesRequestSchema,
-};
-export const NextDepartures = {
-  requestName: "GetNextDeparturesRequest",
-  requestSchema: DeparturesRequestSchema,
-};
-export const NextDeparturesDetails = {
-  requestName: "GetNextDeparturesWithDetailsRequest",
-  requestSchema: DeparturesRequestSchema,
-};
-export const Service = {
-  requestName: "GetServiceDetailsRequest",
-  requestSchema: ServiceRequestSchema,
+module.exports = {
+  Arrivals: {
+    requestName: "GetArrivalBoardRequest",
+    requestSchema: BoardRequestSchema,
+  },
+  ArrivalsDepartures: {
+    requestName: "GetArrivalDepartureBoardRequest",
+    requestSchema: BoardRequestSchema,
+  },
+  ArrivalsDeparturesDetails: {
+    requestName: "GetArrDepBoardWithDetailsRequest",
+    requestSchema: BoardRequestSchema,
+  },
+  ArrivalsDetails: {
+    requestName: "GetArrBoardWithDetailsRequest",
+    requestSchema: BoardRequestSchema,
+  },
+  Departures: {
+    requestName: "GetDepartureBoardRequest",
+    requestSchema: BoardRequestSchema,
+  },
+  DeparturesDetails: {
+    requestName: "GetDepBoardWithDetailsRequest",
+    requestSchema: BoardRequestSchema,
+  },
+  FastestDepartures: {
+    requestName: "GetFastestDeparturesRequest",
+    requestSchema: DeparturesRequestSchema,
+  },
+  FastestDeparturesDetails: {
+    requestName: "GetFastestDeparturesWithDetailsRequest",
+    requestSchema: DeparturesRequestSchema,
+  },
+  NextDepartures: {
+    requestName: "GetNextDeparturesRequest",
+    requestSchema: DeparturesRequestSchema,
+  },
+  NextDeparturesDetails: {
+    requestName: "GetNextDeparturesWithDetailsRequest",
+    requestSchema: DeparturesRequestSchema,
+  },
+  Service: {
+    requestName: "GetServiceDetailsRequest",
+    requestSchema: ServiceRequestSchema,
+  },
 };

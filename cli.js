@@ -1,24 +1,25 @@
 #!/usr/bin/env node
 
-import camelcase from "camelcase";
-import {
+require("dotenv/config.js");
+
+const camelcase = require("camelcase");
+const {
   blue,
   bold,
   cyan,
   dim,
   green,
   italic,
-  options as colors,
+  options: colors,
   red,
   reset,
-} from "colorette";
-import decamelize from "decamelize";
-import "dotenv/config.js";
-import { basename } from "path";
-import { resolve } from "url";
-import { inspect } from "util";
-import yargsParser from "yargs-parser";
-import Client from "./client.js";
+} = require("colorette");
+const decamelize = require("decamelize");
+const { basename } = require("path");
+const { resolve } = require("url");
+const { inspect } = require("util");
+const yargsParser = require("yargs-parser");
+const { Client } = require("./ldb.js");
 
 main().catch((reason) => {
   process.exitCode = 1;
