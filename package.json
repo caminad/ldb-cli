@@ -1,5 +1,5 @@
 {
-  "name": "@kitibyte/ldb",
+  "name": "@kitibyte/ldb-cli",
   "version": "0.0.0-development",
   "private": true,
   "license": "MIT",
