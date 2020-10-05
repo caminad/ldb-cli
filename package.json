@@ -6,14 +6,14 @@
   "main": "./ldb.js",
   "bin": "./cli.js",
   "dependencies": {
-    "ajv": "^6.12.3",
+    "ajv": "^6.12.5",
     "camelcase": "^5.3.1",
     "colorette": "^1.2.1",
     "decamelize": "^1.2.0",
     "dotenv": "^8.2.0",
     "entities": "^2.0.3",
     "node-fetch": "^2.6.1",
-    "xmlbuilder2": "^2.2.0",
+    "xmlbuilder2": "^2.4.0",
     "yargs-parser": "^18.1.3"
   }
 }
