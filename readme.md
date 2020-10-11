@@ -7,7 +7,7 @@ Work-in-progress Live Departure Boards client.
 [Register for OpenLDBWS](https://realtime.nationalrail.co.uk/OpenLDBWSRegistration) and add the token to the environment as `LDB_TOKEN` (e.g., by putting it in a `.env` file in the current directory.) Then, install this package from GitHub using `npm`:
 
 ```shell
-> npm i -g kitibyte/ldb-cli
+> npm i -g DavidJones418/ldb-cli
 ```
 
 ## Synopsis
