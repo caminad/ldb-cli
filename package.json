@@ -6,7 +6,7 @@
   "main": "./ldb.js",
   "bin": "./cli.js",
   "dependencies": {
-    "ajv": "^6.12.5",
+    "ajv": "^6.12.6",
     "camelcase": "^5.3.1",
     "colorette": "^1.2.1",
     "decamelize": "^1.2.0",
